@@ -57,7 +57,9 @@ async function bootstrap() {
     return reply.status(201).send({ code })  
   })
 
-  await fastify.listen({ port: 3333, /*host: '0.0.0.0'*/ })
+  const PORT = 6237
+
+  await fastify.listen({ port: PORT })
 }
 
 bootstrap()
